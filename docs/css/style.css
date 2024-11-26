@@ -1,5 +1,5 @@
 body{
-    margin: 5px;
+    margin: 10px;
     color: white;
 }
 
@@ -27,27 +27,27 @@ body{
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    border: 0px;
-    border-color: black;
     background: black;
     background-size: 0px;
     color: white;
-    width: 50%;
+    width: 100%;
 }
 
 .image2 img{
     width: 50%;
+    margin: 5px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row;
 }
 
 .image2 {
     width: 100%; 
     display: flex;
     flex-direction: row;
-    align-items: end;
-    justify-content: end;
-    justify-self: end;
-    color: white;
     flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .image3 img{
@@ -59,6 +59,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: end;
+    flex-wrap: wrap;
 }
 
 .text {
@@ -70,29 +71,34 @@ body{
 .text1 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
+    justify-content: center;
     color: white;
     width: 50%;
 }
 
 .SmallText {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: start;
     color: white;
 }
 
-@media only screen and (min-width: 100vh) {
+@media only screen and (max-width: 750px) {
     .image1 {
-    
+        flex-direction: column;
     }
 
+    .image2 img {
+        width: 100%;
+    }
+    
     .image2 {
-
+        flex-wrap: wrap;
     }
-    
-    .image3 {
 
+    .image3 {
+        flex-direction: column;
     }
 
     .SmallText {
@@ -104,7 +110,7 @@ body{
     }
 
     .text1 {
-
+        flex-direction: column;
     }
     img {
 
