@@ -1,0 +1,42 @@
+body {
+    margin: 0px;
+    display: flex;
+}
+
+.main {
+    display: flex;
+}
+
+.text {
+
+}
+
+.header {
+
+}
+
+.ImageText {
+
+}
+
+.images {
+
+}
+
+.image1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100PX;
+    height: 100px;
+    background-color: aqua;
+}
+
+.image2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100px;
+    height: 100px;
+ background-color:  green;
+}
